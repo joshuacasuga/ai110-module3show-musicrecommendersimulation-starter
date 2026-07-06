@@ -3,6 +3,8 @@ from typing import List, Dict, Tuple, Optional
 from dataclasses import dataclass
 
 # --- Scoring weights (my "Algorithm Recipe" from Phase 2 / the README) ---
+# (The weight-shift sensitivity experiment is documented in the README; the
+#  weights below are reverted to the original recipe.)
 GENRE_MATCH_POINTS = 2.0   # genre is the most reliable signal of taste
 MOOD_MATCH_POINTS = 1.0    # mood matters, but changes day to day
 ENERGY_MAX_POINTS = 1.5    # awarded by closeness to target energy, not "higher is better"
